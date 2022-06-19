@@ -35,7 +35,7 @@ const JobList = () => {
   }
 
   return (
-    <ul className="px-4 py-6">
+    <ul className="px-4 py-6 mx-auto sm:max-w-7xl">
       {jobs.map((job) => {
         return <Job key={uuidv4()} job={job} />;
       })}

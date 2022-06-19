@@ -61,7 +61,7 @@ const Searchbar = () => {
   };
 
   return (
-    <div className="w-full px-4 mt-8">
+    <div className="w-full px-4 mx-auto mt-8 sm:max-w-7xl">
       <form className="w-full">
         <label htmlFor="search" className="block mb-2 font-semibold text-darkCyan">
           Enter search term

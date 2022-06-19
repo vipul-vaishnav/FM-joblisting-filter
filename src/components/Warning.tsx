@@ -2,7 +2,7 @@ import React from 'react';
 
 const Warning = () => {
   return (
-    <div className="my-3 shadow-lg alert alert-warning">
+    <div className="mx-auto my-3 shadow-lg sm:max-w-7xl alert alert-warning">
       <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
