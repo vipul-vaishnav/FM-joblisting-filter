@@ -24,10 +24,10 @@ const JobList = () => {
 
   if (loading) {
     return (
-      <div className="w-full h-96 flex justify-center items-center">
+      <div className="flex items-center justify-center w-full h-96">
         <div className="text-center">
-          <h1 className="text-4xl font-bold mb-6 text-veryDarkGrayishCyan">Please Wait...</h1>
-          <p className="text-lg font-semibold mb-6 text-veryDarkGrayishCyan">Data is being loaded</p>
+          <h1 className="mb-6 text-4xl font-bold text-veryDarkGrayishCyan">Please Wait...</h1>
+          <p className="mb-6 text-lg font-semibold text-veryDarkGrayishCyan">Data is being loaded</p>
           <Loader />
         </div>
       </div>
@@ -35,7 +35,7 @@ const JobList = () => {
   }
 
   return (
-    <ul className="py-8 px-4">
+    <ul className="px-4 py-6">
       {jobs.map((job) => {
         return <Job key={uuidv4()} job={job} />;
       })}
